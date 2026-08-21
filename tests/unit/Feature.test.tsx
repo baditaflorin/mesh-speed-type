@@ -10,6 +10,7 @@ describe("Speed Type", () => {
     expect(phraseForRound(PHRASES.length)).toBe(PHRASES[0]);
     expect(accuracyFor("abc", "axc")).toBe(67);
     expect(wpmFor("hello", 60_000)).toBe(1);
+    expect(wpmFor("hello", 0)).toBe(0);
   });
 
   it("renders the game while connected", () => {
